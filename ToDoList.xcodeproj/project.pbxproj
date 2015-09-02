@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		772696551B96876F00183EC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 772696541B96876F00183EC9 /* main.m */; };
 		772696581B96876F00183EC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 772696571B96876F00183EC9 /* AppDelegate.m */; };
-		7726965B1B96876F00183EC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7726965A1B96876F00183EC9 /* ViewController.m */; };
 		7726965E1B96876F00183EC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7726965C1B96876F00183EC9 /* Main.storyboard */; };
 		772696601B96876F00183EC9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7726965F1B96876F00183EC9 /* Images.xcassets */; };
 		772696631B96876F00183EC9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 772696611B96876F00183EC9 /* LaunchScreen.xib */; };
 		7726966F1B96876F00183EC9 /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7726966E1B96876F00183EC9 /* ToDoListTests.m */; };
+		7726967A1B96A36700183EC9 /* AddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 772696791B96A36700183EC9 /* AddToDoItemViewController.m */; };
+		7726967D1B96A46600183EC9 /* ToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7726967C1B96A46600183EC9 /* ToDoListTableViewController.m */; };
+		772696801B96CBEB00183EC9 /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7726967F1B96CBEB00183EC9 /* ToDoItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,18 @@
 		772696541B96876F00183EC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		772696561B96876F00183EC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		772696571B96876F00183EC9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		772696591B96876F00183EC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7726965A1B96876F00183EC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7726965D1B96876F00183EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7726965F1B96876F00183EC9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		772696621B96876F00183EC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		772696681B96876F00183EC9 /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7726966D1B96876F00183EC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7726966E1B96876F00183EC9 /* ToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListTests.m; sourceTree = "<group>"; };
+		772696781B96A36700183EC9 /* AddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToDoItemViewController.h; sourceTree = "<group>"; };
+		772696791B96A36700183EC9 /* AddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToDoItemViewController.m; sourceTree = "<group>"; };
+		7726967B1B96A46600183EC9 /* ToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListTableViewController.h; sourceTree = "<group>"; };
+		7726967C1B96A46600183EC9 /* ToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListTableViewController.m; sourceTree = "<group>"; };
+		7726967E1B96CBEB00183EC9 /* ToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
+		7726967F1B96CBEB00183EC9 /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +89,16 @@
 			children = (
 				772696561B96876F00183EC9 /* AppDelegate.h */,
 				772696571B96876F00183EC9 /* AppDelegate.m */,
-				772696591B96876F00183EC9 /* ViewController.h */,
-				7726965A1B96876F00183EC9 /* ViewController.m */,
 				7726965C1B96876F00183EC9 /* Main.storyboard */,
 				7726965F1B96876F00183EC9 /* Images.xcassets */,
 				772696611B96876F00183EC9 /* LaunchScreen.xib */,
 				772696521B96876F00183EC9 /* Supporting Files */,
+				772696781B96A36700183EC9 /* AddToDoItemViewController.h */,
+				772696791B96A36700183EC9 /* AddToDoItemViewController.m */,
+				7726967B1B96A46600183EC9 /* ToDoListTableViewController.h */,
+				7726967C1B96A46600183EC9 /* ToDoListTableViewController.m */,
+				7726967E1B96CBEB00183EC9 /* ToDoItem.h */,
+				7726967F1B96CBEB00183EC9 /* ToDoItem.m */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -219,9 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7726965B1B96876F00183EC9 /* ViewController.m in Sources */,
 				772696581B96876F00183EC9 /* AppDelegate.m in Sources */,
+				772696801B96CBEB00183EC9 /* ToDoItem.m in Sources */,
+				7726967D1B96A46600183EC9 /* ToDoListTableViewController.m in Sources */,
 				772696551B96876F00183EC9 /* main.m in Sources */,
+				7726967A1B96A36700183EC9 /* AddToDoItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
